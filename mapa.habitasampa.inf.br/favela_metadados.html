@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- HabitaSampa - 2016-->
+<html>
+<head>
+<title>Metadado HabitaSampa</title>
+</head>
+<body>
+<b>HabitaSampa - Sistema de Informações para Habitação Social na Cidade de São Paulo </b><br>
+<i>Codificação do fonte de dados: UTF-8</i><br><br>
+<p>Camada:  favela<br>
+Data Atualização: 18/07/2018
+</p>
+<table>
+		<tr bgcolor=yellow><th>Nome Coluna Shapefile/kml</th><th>Nome Coluna Banco HabitaSampa</th><th>Tipo de Dado</th><th>Valores pré-definidos</th><th>Descrição Coluna</th></tr>
+<tr><td>gid</td><td>gid</td><td>integer</td><td>Numeração sequencial gerada automaticamente pelo banco de dados</td><td>Contador interno sequencial da tabela</td></tr>
+<tr><td>cod</td><td>cod</td><td>integer</td><td>Numeração sequencial gerada automaticamente pelo banco de dados</td><td>Código único gerado pelo antigo sistema</td></tr>
+<tr><td>id</td><td>id</td><td>character varying</td><td>Valor uuid gerado pelo sistema</td><td>Uuid – Universal Único ID</td></tr>
+<tr><td>name</td><td>nome</td><td>character varying</td><td>Informado pelo tecnico </td><td>Nome da Favela</td></tr>
+<tr><td>nomesecund</td><td>nome_secundario</td><td>character varying</td><td>Informado pelo tecnico </td><td>Nome secundário</td></tr>
+<tr><td>localizaca</td><td>localizacao</td><td>character varying</td><td>Informado pelo tecnico </td><td>Endereço de localização da favela</td></tr>
+<tr><td>qtddom</td><td>totcomposicao</td><td>numeric(15,2)</td><td>Informado pelo tecnico </td><td>Quantidade de domicílios estimados</td></tr>
+<tr><td>areageo</td><td>area_tot_m2</td><td>numeric(15,2)</td><td>Análise espacial automática no banco de dados</td><td>Área em m² da geometria</td></tr>
+<tr><td>distritcod</td><td>distrito_cod</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Código do Distrito</td></tr>
+<tr><td>distritnom</td><td>distrito_nome</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Nome do Distrito</td></tr>
+<tr><td>distritpor</td><td>distrito_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do distrito</td></tr>
+<tr><td>subprefcod</td><td>subprefeitura_cod</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Código da Subprefeitura</td></tr>
+<tr><td>subprefnom</td><td>subprefeitura_nome</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Nome da Subprefeitura</td></tr>
+<tr><td>subprefpor</td><td>subprefeitura_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro da Subprefeitura</td></tr>
+<tr><td>dearcod</td><td>dear_cod</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Código da DEAR</td></tr>
+<tr><td>dearnome</td><td>dear_nome</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Nome da DEAR</td></tr>
+<tr><td>dearporc</td><td>dear_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro da DEAR</td></tr>
+<tr><td>peacintnom</td><td>per_acao_integrada</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Nome do Perímetro de Ação Integrada</td></tr>
+<tr><td>peacintpor</td><td>per_acao_integrada_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do Perímetro de Ação Integrada</td></tr>
+<tr><td>zon13885no</td><td>zon_lei13885</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Classe do zoneamento Lei nº 13.885/2004</td></tr>
+<tr><td>zon13885po</td><td>zon_lei13885_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do zoneamento Lei nº 13.885/2004</td></tr>
+<tr><td>zon16402no</td><td>zon_lei16402</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Classe do zoneamento Lei nº 16.402/2016</td></tr>
+<tr><td>zon16402po</td><td>zon_lei16402_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do zoneamento Lei nº 16.402/2016</td></tr>
+<tr><td>ipvs2010co</td><td>ipvs_2010</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Índice Paulista de Vulnerabilidade Social – 2010</td></tr>
+<tr><td>ipvs2010po</td><td>ipvs_2010_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do IPVS 2010</td></tr>
+<tr><td>riscotipo</td><td>risco_tipo</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Tipo de risco geológico</td></tr>
+<tr><td>riscograu</td><td>risco_grau</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Grau de risco geológico</td></tr>
+<tr><td>riscoporc</td><td>risco_porc</td><td>character varying</td><td>Análise espacial automática no banco de dados</td><td>Porcentagem de área da favela dentro do risco geológico</td></tr>
+<tr><td>dataultima</td><td>dataultimaatualizacao</td><td>date</td><td>Atualizado automaticamente pelo sistema </td><td>data da última atualização</td></tr>
+<tr><td>usuarioult</td><td>usuarioultimaatualizacao</td><td>character varying(100)</td><td>Atualizado automaticamente pelo sistema </td><td>e-mail do usuário responsável pela ultima atualização</td></tr>
+<tr><td>dtvistoria</td><td>dataultimavistoria</td><td>date</td><td>Informado pelo tecnico </td><td>Data da ultima vistoria em campo</td></tr>
+<tr><td>tecvistori</td><td>nometecnicovistoria</td><td>character varying(100)</td><td>Informado pelo tecnico </td><td>Nome do técnico responsável pela ultima vistoria</td></tr>
+<tr><td>procregula</td><td>possuiprocessoregularizacao</td><td>character varying(50)</td><td>Titulada 1ª fase | Titulada 2ª fase | Não titulada</td><td>Possui processo de regularização</td></tr>
+<tr><td>alcaacesso</td><td>alcaacesso</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sob alça de acesso</td></tr>
+<tr><td>ponteviadu</td><td>embaixoponteviaduto</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Embaixo de ponte ou viaduto</td></tr>
+<tr><td>rotilhtran</td><td>rotatoriailhatransito</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Em rotatória, ilha ou trânsito</td></tr>
+<tr><td>aterrsanit</td><td>aterrosanitariolixao</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Em aterro sanitário ou lixão</td></tr>
+<tr><td>realtatens</td><td>embaixoredealtatensao</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Embaixo de rede de alta tensão</td></tr>
+<tr><td>oleogasodu</td><td>sobreoleodutogasotuto</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sobre rede de oleoduto ou gasoduto</td></tr>
+<tr><td>anonedific</td><td>sobreareanaoedificante</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sobre área Non Aedificandi</td></tr>
+<tr><td>arcontamin</td><td>sobreareacontaminada</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sobre área contaminada</td></tr>
+<tr><td>altdeclivi</td><td>sobrealtadeclividade</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sobre alta declividade</td></tr>
+<tr><td>sistviario</td><td>sistemaviarioativo</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sistema viário ativo</td></tr>
+<tr><td>sistferrov</td><td>sistemaferroviarioativo</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Sistema ferroviário ativo</td></tr>
+<tr><td>abastagua</td><td>abastecimentoagua</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Rede de abastecimento de água</td></tr>
+<tr><td>esgotsanit</td><td>esgotamentosanitario</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Rede de coleta de esgoto</td></tr>
+<tr><td>redeletric</td><td>redeeletricadomiciliar</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Rede elétrica domiciliar</td></tr>
+<tr><td>ilumpublic</td><td>iluminacaopublica</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Rede de iluminação pública</td></tr>
+<tr><td>drenapluvi</td><td>drenagempluvial</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Rede de drenagem pluvial</td></tr>
+<tr><td>viapavimen</td><td>viaspavimentadas</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Vias pavimentadas</td></tr>
+<tr><td>coletalixo</td><td>coletalixo</td><td>numeric(3,2)</td><td>Nenhum=0.00, Parcial=0.50 Total=1,00</td><td>Serviço de coleta de lixo</td></tr>
+<tr><td>qtdremocao</td><td>qtdremocao</td><td>numeric(3,2)</td><td>Informado pelo tecnico valores de 0 a 100</td><td>Porcentagem da área que foi removida</td></tr>
+<tr><td>tipcollixo</td><td>tipocoletalixo</td><td>numeric(1,0)</td><td>Porta a porta=1, Caçamba=2, Nas ruas de entorno=3</td><td>Tipo de coleta de lixo</td></tr>
+<tr><td>proprietar</td><td>proprietario</td><td>character varying(100)</td><td>Informado pelo tecnico </td><td>Nome do proprietário</td></tr>
+<tr><td>enderecopr</td><td>enderecoproprietario</td><td>character varying(100)</td><td>Informado pelo tecnico </td><td>Endereço do proprietário</td></tr>
+<tr><td>anoimplant</td><td>anoimplantacao</td><td>numeric(4,0)</td><td>Informado pelo tecnico </td><td>Ano em que ocorreu a ocupação da favela</td></tr>
+<tr><td>proppublic</td><td>propriedadepublica</td><td>numeric(1,0)</td><td>Informado pelo tecnico </td><td>Propriedade publica</td></tr>
+<tr><td>proppartic</td><td>propriedadeparticular</td><td>numeric(1,0)</td><td>Informado pelo tecnico </td><td>Propriedade particular</td></tr>
+<tr><td>proptpubli</td><td>proprietariopublica</td><td>character varying(100)</td><td>Informado pelo tecnico </td><td>Nome do proprietário no caso de ser em área pública</td></tr>
+<tr><td>tecinclusa</td><td>usuarioinclusao</td><td>character varying(100)</td><td>Informado pelo tecnico </td><td>Nome do técnico responsável pela inclusão da informação</td></tr>
+<tr><td>dtinclusao</td><td>datainclusao</td><td>date</td><td>Atualizado automaticamente pelo sistema </td><td>Data da inclusão (inserção do polígono no mapa)</td></tr>
+<tr><td>descricao</td><td>descricao</td><td>character varying</td><td>Informado pelo tecnico </td><td>Descrição ou observações gerais</td></tr>
+<tr><td>favgeom</td><td>ehab_geometria</td><td>geometry(MultiPolygon,31983)</td><td>Informado pelo tecnico</td><td>Definição da geometria do polígono da favela</td></tr>
+</table>
+<p><b>Observações:</b> <i>Geometrias do tipo MULTIPOLÍGONO georreferenciado na projeção UTM SIRGAS-2000 SRID: 31983.</i></p>
+<p><i>Os tipos de dados estão de acordo com os padrões utilizados no Gerenciador de Banco de Dados Postgresql, para maiores informações sobre cada tipo <a href="http://www.postgresql.org/docs/current/static/datatype.html" target="datatypes">clique aqui.</a></i></p>
+
+</body>
+</html>

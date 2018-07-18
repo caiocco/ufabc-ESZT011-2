@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- HabitaSampa - 2016-->
+<html>
+<head>
+<title>Metadado HabitaSampa</title>
+</head>
+<body>
+<b>HabitaSampa - Sistema de Informações para Habitação Social na Cidade de São Paulo </b><br>
+<i>Codificação do fonte de dados: UTF-8</i><br><br>
+<p>Camada:  loteamento<br>
+Data Atualização: 18/07/2018
+</p>
+<table>
+		<tr bgcolor=yellow><th>Nome Coluna Shapefile/kml</th><th>Nome Coluna Banco HabitaSampa</th><th>Tipo de Dado</th><th>Valores pré-definidos</th><th>Descrição Coluna</th></tr>
+<tr><td>gid</td><td>gid</td><td>integer</td><td></td><td>Identificador sequencial gerado pelo banco de dados</td></tr>
+<tr><td>uuid_id</td><td>uuid_id</td><td>character varying</td><td></td><td>Chave única da geometria gerada automaticamente pelo banco de dados </td></tr>
+<tr><td>nome</td><td>nome</td><td>character varying</td><td></td><td>Nome principal do loteamento</td></tr>
+<tr><td>totlotes</td><td>totlotes</td><td>numeric</td><td></td><td>Total de lotes</td></tr>
+<tr><td>areageo_m2</td><td>areageo_m2</td><td>numeric</td><td></td><td>Área da geometria em metros quadrados</td></tr>
+<tr><td>distrito_c</td><td>distrito_cod</td><td>character varying</td><td></td><td>Código do Distrito</td></tr>
+<tr><td>distrito_n</td><td>distrito_nome</td><td>character varying</td><td></td><td>Nome do Distrito</td></tr>
+<tr><td>distrito_p</td><td>distrito_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro do Distrito</td></tr>
+<tr><td>prefregion</td><td>prefregional_cod</td><td>character varying</td><td></td><td>Código da Prefeitura Regional</td></tr>
+<tr><td>Prefregi_1</td><td>prefregional_nome</td><td>character varying</td><td></td><td>Nome da Prefeitura Regional</td></tr>
+<tr><td>Prefregi_2</td><td>prefregional_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro da Prefeitura Regional</td></tr>
+<tr><td>dear_cod</td><td>dear_cod</td><td>character varying</td><td></td><td>Código da Regional da Habitação</td></tr>
+<tr><td>dear_nome</td><td>dear_nome</td><td>character varying</td><td></td><td>Nome da Regional da Habitação</td></tr>
+<tr><td>dear_porc</td><td>dear_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro da Regional da Habitação</td></tr>
+<tr><td>per_acao_i</td><td>per_acao_integrada</td><td>character varying</td><td></td><td>Nome do Perímetro da Ação Integrada</td></tr>
+<tr><td>per_acao_1</td><td>per_acao_integrada_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro do Perímetro da Ação Integrada</td></tr>
+<tr><td>zon_lei164</td><td>zon_lei16402</td><td>character varying</td><td></td><td>Código do zoneamento vigente</td></tr>
+<tr><td>zon_lei1_1</td><td>zon_lei16402_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro do zoneamento vigente</td></tr>
+<tr><td>ipvs_2010</td><td>ipvs_2010</td><td>character varying</td><td></td><td>Código do Índice Paulista de Vulnerabilidade Social</td></tr>
+<tr><td>Ipvs_2010_</td><td>ipvs_2010_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro do Índice Paulista de Vulnerabilidade Social</td></tr>
+<tr><td>risco_tipo</td><td>risco_tipo</td><td>character varying</td><td></td><td>Tipo de risco geológico</td></tr>
+<tr><td>risco_grau</td><td>risco_grau</td><td>character varying</td><td></td><td>Grau de risco geológico</td></tr>
+<tr><td>risco_porc</td><td>risco_porc</td><td>character varying</td><td></td><td>Porcentagem do loteamento dentro do risco geológico</td></tr>
+<tr><td>op_data_cr</td><td>op_data_criacao</td><td>date</td><td></td><td>Data de criação da geometria (devido a carga em massa a data não reflete a situação real em alguns casos)</td></tr>
+<tr><td>op_data_al</td><td>op_data_alteracao</td><td>date</td><td></td><td>Data da última alteração da geometria (devido a carga em massa a data não reflete a situação real em alguns casos)</td></tr>
+<tr><td>nro_pa</td><td>nro_pa</td><td>character varying</td><td></td><td>Número do Processo Administrativo do loteamento</td></tr>
+<tr><td>definicao</td><td>definicao</td><td>character varying</td><td></td><td>Tipo de loteamento – Loteamento, Assentamento ou Desdobramento</td></tr>
+<tr><td>nro_planta</td><td>nro_planta_au</td><td>character varying</td><td></td><td>Número da Planta AU</td></tr>
+<tr><td>nro_auto_r</td><td>nro_auto_regulariza</td><td>character varying</td><td></td><td>Número do Auto de Regularização do loteamento</td></tr>
+<tr><td>renda</td><td>renda</td><td>character varying</td><td></td><td>Renda média do loteamento extraído do IBGE - "ATE 6SM" ou "MAIOR 6SM"</td></tr>
+<tr><td>ehab_geome</td><td>ehab_geometria</td><td>geometry</td><td></td><td>Definição da geometria georreferenciada na projeção UTM-Sirgas 2000 (EPSG: 31983)</td></tr>
+
+</table>
+<p><b>Observações:</b> <i>Geometrias do tipo MULTIPOLÍGONO georreferenciado na projeção UTM SIRGAS-2000 SRID: 31983.</i></p>
+<p><i>Os tipos de dados estão de acordo com os padrões utilizados no Gerenciador de Banco de Dados Postgresql, para maiores informações sobre cada tipo <a href="http://www.postgresql.org/docs/current/static/datatype.html" target="datatypes">clique aqui.</a></i></p>
+
+</body>
+</html>
